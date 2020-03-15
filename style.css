@@ -1,0 +1,241 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    position: relative;
+    background: #D8D0D0;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    height: 10vh;
+    width: 100%;
+    background-color: #423D3D;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10%;
+}
+.heading {
+    font-size: 28px;
+    color: whitesmoke;
+}
+header a span {
+    color : #ffc107;
+}
+
+/* SEARCH FORM */
+.form {
+    position: relative;
+    margin: 3vh auto; 
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #2C2222, #B9AFAF);
+    border-radius: 20px;
+}
+form {
+    position: relative;
+    width: 90%;
+}
+.inputDiv {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 40px;
+}
+input {
+    font-size: 22px;
+    transition: 0.5s;
+}
+input[type="text"]{
+    flex: 3;
+    background: #fff;
+    outline: none;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    padding: 0 0 0 20px;
+}
+input[type="submit"]{
+    flex: 1;
+    outline: none;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    background: #ffc107;
+    color: #fff;
+}
+input[type="submit"]:hover{
+    background: #ff5722;
+}
+
+
+/* TRENDING MOVIES*/
+.wrapper {
+    width: 100%;
+    height: 65vh;
+    margin: 2vh 0 0 0;
+}
+.trending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.trend {
+    width: 50%;
+    height: 90%;
+    list-style-position: inside;
+    -moz-column-count: 2;
+    -webkit-column-count: 2; 
+    column-count: 2;
+    list-style-type: disc;
+    padding: 2%;
+}
+li {
+    margin: 1vh 0;
+}
+a {
+    cursor: pointer;
+    font-style: oblique;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+/* SHOW MOVIE*/
+.wrapper.movie{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(360deg, rgb(131, 127, 127), #D8D0D0);
+}
+.moviePoster {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.moviePoster img {
+    width: 100%;
+    height: 90%;
+}
+.movieInfo {
+    position: relative;
+    width: 50%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.movieName {
+    padding: 35px 0;
+    text-align: center;
+    height: 10%;
+}
+.movieOverview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.movieRecomendations {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+}
+.recomendationHeading {
+    text-align: center;
+}
+.recomend {
+    width:100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+} 
+.recommendated {
+    font-style: oblique;
+    font-size: 18px;
+    display: table-cell;
+}
+
+/* SEARCH RESULTS*/
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+.Search ul {
+        width: 50%;
+        height: 90%;
+        list-style-position: inside;
+        -moz-column-count: 2;
+        -webkit-column-count: 2; 
+        column-count: 2;
+        list-style-type: none;
+        padding: 2%;
+}
+
+
+
+
+@media (max-width : 1046px){
+    .wrapper.movie {
+        width: 90%;
+        margin: 1vh auto;
+    }
+    .moviePoster {
+        width: 30%;
+    }
+    .movieInfo {
+        width: 70%;
+    }
+    .trend {
+        width: 90%;
+        padding: 0 0 0 20%;
+    }
+}
+
+@media (max-width : 840px) {
+    body {
+        max-height: auto;
+        overflow: auto;
+    }
+    .wrapper.movie {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+    }
+    .moviePoster {
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+    }
+    .moviePoster img {
+        margin: auto;
+        height: auto;
+    }
+    .trend {
+        height: auto;
+    }
+    .movieRecomendations {
+        width: 100%;
+    }
+}
+@media (max-width : 800px) {
+    .form {
+        width :500px;
+    } 
+    .wrapper {
+        height: auto;
+    }
+}

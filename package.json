@@ -1,0 +1,11 @@
+{
+  "name": "themoviedb-app",
+  "version": "1.0.0",
+  "description": "Testing task for Apiko Intensive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andriy Yuzviak",
+  "license": "ISC"
+}
